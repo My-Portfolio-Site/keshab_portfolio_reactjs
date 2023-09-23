@@ -14,8 +14,12 @@ const Home = () => {
             <Reveal className='text-[17px] text-sky-700'>Software Developer</Reveal>
             <Reveal className='text-[18px] md:text-[20px]'>ReactJs <strong className='text-purple-700'>|</strong> Chatbot <strong className='text-purple-700'>|</strong> RPA <strong className='text-purple-700'>|</strong> Python</Reveal>
             <Reveal className='flex flex-row gap-3 my-4'>
-                <FaGithubSquare className='text-[32px] cursor-pointer' />
+                <a href='https://github.com/keshabmanni' target='_blank' rel="noreferrer noopener">
+                    <FaGithubSquare className='text-[32px] cursor-pointer' />
+                </a>
+                <a href='https://www.linkedin.com/in/keshabmanni/' target='_blank' rel="noreferrer noopener">
                 <FaLinkedin className='text-[32px] text-cyan-600 cursor-pointer' />
+                </a>
                 <a download="CV_Keshab Manni_Software Developer.pdf" href={cv_url} className='rounded-full bg-violet-600 flex flex-row text-white px-3 py-1'>Resume <LuDownload className='ml-1 text-[20px]' /></a>
             </Reveal>
             <Reveal>
