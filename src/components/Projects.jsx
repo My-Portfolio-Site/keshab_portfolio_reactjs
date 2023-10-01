@@ -1,5 +1,4 @@
 import FullScreenSection from "./FullScreenSection"
-import {PiProjectorScreenChart} from 'react-icons/pi'
 
 const Projects = () => {
     const ProjectsList = [
@@ -11,7 +10,10 @@ const Projects = () => {
     ]
     return (
         <FullScreenSection id="projects">
-            <h2 className="text-[28px] bg-white font-extrabold flex flex-row text-green-600"><PiProjectorScreenChart className="p-1 text-[36px]"/>Projects</h2>
+            <h2 className="text-[28px] bg-white font-extrabold flex flex-row text-green-600">
+
+                Projects
+            </h2>
         </FullScreenSection>
     )
 }

@@ -5,11 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily:{
-      'Quicksand' :['QuicksandBold']
+    fontFamily: {
+      'Quicksand': ['QuicksandBold']
     },
     extend: {},
   },
   plugins: [],
+
 }
 

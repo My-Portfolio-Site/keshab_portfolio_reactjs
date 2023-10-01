@@ -6,8 +6,9 @@
 @font-face {
   font-family: "QuicksandBold";
   src: local("QuicksandBold"),
-   url("./fonts/Quicksand/static/Quicksand-Bold.ttf") format("truetype");
+   url("./fonts/Quicksand/Quicksand-Bold.ttf") format("truetype");
   font-weight: bold;
+  font-display: swap;
 }
 
 /* custom tailwind class */
