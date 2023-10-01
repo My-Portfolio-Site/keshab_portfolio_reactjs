@@ -7,7 +7,6 @@ import icon_download from '../assets/icons/download.svg'
 import FullScreenSection from './FullScreenSection';
 import { Reveal } from './Reveal';
 
-// import myPhoto from ''
 
 const Home = () => {
 
@@ -31,7 +30,7 @@ const Home = () => {
             <Reveal>
                 <img loading='' className='w-72 rounded-full'
                     width="288px" height="288px"
-                    src="my_photo_mobile.jpg"
+                    src="my_photo.jpg"
                     alt='keshab manni photo'
                 />
             </Reveal>
