@@ -1,5 +1,5 @@
 import logo from '../assets/LogoSVG/logo20.svg'
-import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi'
+// import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi'
 import { motion as m } from 'framer-motion'
 import { SideReveal } from './SideReveal'
 
@@ -18,7 +18,7 @@ const Header = () => {
         <div className='fixed left-1 top-6 md:top-6 md:left-2 lg:top-8 rounded-full flex flex-row gap-3 px-3 '>
             <div className='flex flex-col gap-3'>
                 <SideReveal>
-                    <m.img whileTap='tap' whileHover='hover' variants={logoAnimate} className='h-[35px] w-fit' src={logo} alt="K" />
+                    <m.img whileTap='tap' whileHover='hover' variants={logoAnimate} className='h-[35px] w-fit' loading='lazy' src={logo} alt="K" />
                 </SideReveal>
                 {/* <SideReveal>
                     <m.div initial='initial' whileHover='animate' className='group flex flex-row  gap-1'>

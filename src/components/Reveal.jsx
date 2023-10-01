@@ -16,12 +16,12 @@ export const Reveal = ({ children, ...props }) => {
     return (
         <m.div
             ref={ref} variants={{
-                hidden: { opacity: 0, y: 50 },
+                hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 }
             }}
             initial="hidden"
             animate={controls}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.4, delay: 0.05 }}
             {...props}
         >
             {children}

@@ -1,6 +1,7 @@
 
+import icon_experiance from '../assets/icons/experiance.svg'
+
 import FullScreenSection from "./FullScreenSection";
-import { FaComputer } from 'react-icons/fa6'
 import { Reveal } from "./Reveal";
 
 const Experiance = () => {
@@ -31,7 +32,10 @@ const Experiance = () => {
 
     return (
         <FullScreenSection className="gap-3 bg-gradient-to-b from-orange-100 to-green-100" id="experiance">
-            <h2 className="text-[28px] font-extrabold flex flex-row text-purple-500"><FaComputer className="p-1 text-[36px]" />Experiance</h2>
+            <h2 className="text-[28px] font-extrabold flex flex-row text-purple-500">
+                <img loading="lazy" className='p-1' src={icon_experiance} height="36px" width="36px" alt='experiance'/>
+                Experiance
+            </h2>
             {experiances.map(item => <ExperianceComponent key={item.company} {...item} />)}
         </FullScreenSection>
     )
@@ -41,7 +45,7 @@ const ExperianceComponent = ({ company, location, position, date, details }) => 
     return (
         <Reveal className="p-3 bg-slate-100 rounded-lg">
             <div>
-                <span className="text-[20px] p-2 font-semibold text-blue-500">{company},</span>
+                <span className="text-[20px] p-2 font-semibold text-blue-800">{company},</span>
                 <span className="text-[16px]  font-bold">{location}</span>
             </div>
             <div className="flex flex-col sm:flex-row p-2">
