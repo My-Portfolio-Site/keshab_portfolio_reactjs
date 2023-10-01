@@ -6,7 +6,7 @@ import { Reveal } from "./Reveal"
 
 const AboutMe = () => {
     return (
-        <FullScreenSection className="gap-3 bg-gradient-to-b from-yellow-100 to-slate-100">
+        <FullScreenSection className="gap-3 bg-gradient-to-b from-yellow-100 to-slate-100" id="About-me">
             <h2 className="text-[28px] font-extrabold flex flex-row text-purple-500"><MdOutlinePersonPin className="p-1 text-[36px]" />About me</h2>
             <Reveal className="card bg-white px-5 sm:px-10 sm:w-4/5 md:w-2/3 mb-20 text-center">
                 <Reveal className="flex flex-row gap-2 py-2 text-[16px] md:text-[20px] text-green-600"><HiOutlinePhone className='text-[20px] md:text-[25px]  mt-1' />+91-9542186990</Reveal>

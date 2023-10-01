@@ -16,7 +16,7 @@ const Others = () => {
 }
 const Skills = () => {
     return (
-        <Reveal className="card basis-1/2">
+        <Reveal className="card basis-1/2" id="skills">
             <div className="text-[25px] font-bold flex flex-row text-blue-500"><GiSkills className="p-1 text-[36px]" />Skills</div>
             <Reveal className="flex flex-col gap-1">
                 <Reveal>
@@ -41,7 +41,7 @@ const Skills = () => {
 
 const Certifications_Courses = () => {
     return (
-        <Reveal className="card basis-1/2">
+        <Reveal className="card basis-1/2" id="certificate-courses">
             <div className="text-[25px] font-bold flex flex-row text-yellow-500"><PiCertificate className="p-1 text-[36px]" /> Certifications/Courses</div>
             <Reveal>
                 <ul className="flex flex-col gap-1 list-disc ml-5">
