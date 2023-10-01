@@ -5,7 +5,7 @@ import { Reveal } from "./Reveal";
 
 const Education = () => {
     return (
-        <FullScreenSection className="gap-3 bg-gradient-to-b from-green-100 to-purple-100">
+        <FullScreenSection className="gap-3 bg-gradient-to-b from-green-100 to-purple-100" id="education">
             <span className="text-[28px] font-extrabold flex flex-row text-orange-600"><TbSchool className="p-1 text-[36px]"/>Education</span>
             <Reveal className="bg-slate-100 px-10 py-5 rounded-lg w-full ">
                 <Reveal className="flex flex-col sm:flex-row p-2">

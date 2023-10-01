@@ -30,7 +30,7 @@ const Experiance = () => {
     ]
 
     return (
-        <FullScreenSection className="gap-3 bg-gradient-to-b from-orange-100 to-green-100">
+        <FullScreenSection className="gap-3 bg-gradient-to-b from-orange-100 to-green-100" id="experiance">
             <h2 className="text-[28px] font-extrabold flex flex-row text-purple-500"><FaComputer className="p-1 text-[36px]" />Experiance</h2>
             {experiances.map(item => <ExperianceComponent key={item.company} {...item} />)}
         </FullScreenSection>
