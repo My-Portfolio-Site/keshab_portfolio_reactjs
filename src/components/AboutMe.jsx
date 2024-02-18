@@ -29,7 +29,7 @@ const AboutMe = () => {
                 </Reveal> */}
                 <Reveal className="flex flex-row gap-2 py-2 text-[16px] md:text-[20px] text-yellow-600">
                     <img loading="lazy" width="20px" height="20px" src={icon_location} className=' text-[20px] md:text-[25px] mt-1' alt="location"/>
-                    BP Nagar-01, Doti, Nepal
+                    Kathmandu, Nepal
                 </Reveal>
                 <Reveal>
                     <p className="text-[18px] text-left " style={{ textIndent: '25px' }}>Experience in developing software solutions with Rasa chatbot framework, UiPath, Python, web technologies(HTML, CSS Javascript) and web frameworks like ReactJs, Django and Nodejs.</p>
