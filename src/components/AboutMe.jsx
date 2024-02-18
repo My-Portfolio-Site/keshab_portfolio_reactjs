@@ -17,7 +17,7 @@ const AboutMe = () => {
             <Reveal className="card bg-white px-5 sm:px-10 sm:w-4/5 md:w-2/3 mb-20 text-center">
                 <Reveal className="flex flex-row gap-2 py-2 text-[16px] md:text-[20px] text-green-600">
                     <img loading="lazy" width="20px" height="20px" src={icon_phone} className='text-[20px] md:text-[25px]  mt-1' alt="phone"/>
-                    +91-9542186990
+                    +977-9868097562/ +91-9542186990
                 </Reveal>
                 <Reveal className="flex flex-row gap-2 py-2 text-[16px] md:text-[20px] text-blue-600">
                     <img loading="lazy" width="20px" height="20px" src={icon_mail} className=' text-[20px] md:text-[25px] mt-1' alt="email"/>
