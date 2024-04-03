@@ -20,7 +20,6 @@ const Home = () => {
             <Reveal className='flex flex-row gap-3 my-4'>
                 <a aria-label='Keshab Manni GitHub link' href='https://github.com/keshabmanni' target='_blank' rel="noreferrer noopener">
                     <img loading="lazy" src={icon_github} width='32px' height='32px' className='cursor-pointer' alt='Github' />
-
                 </a>
                 <a aria-label='Keshab Manni LinkedIn' href='https://www.linkedin.com/in/keshabmanni/' target='_blank' rel="noreferrer noopener">
                     <img loading="lazy" src={icon_linkedIn} width='32px' height='32px' className='cursor-pointer' alt='LinkedIn' />
