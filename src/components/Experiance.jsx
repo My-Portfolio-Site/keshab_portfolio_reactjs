@@ -18,6 +18,17 @@ const Experiance = () => {
             ]
         },
         {
+            company: "Marlabs Pvt Ltd",
+            location: "Banglore, India",
+            position: "Assocoate Software Engineer",
+            date: "Dec 2021 - Present",
+            details: [
+                "Designed and implemented intent based chatbot for Marlabs website to improve interaction and inquiry. Developed chatbot with Rasa Framework and front-end with HTML, CSS and JavaScript. Used MongoDB(AWS DocumentDB) for storing responses and deployed on AWS EC2(Ubuntu) server with Docker and Nginx as reverse proxy server.",
+                "Automated POC of Remote PC automation with UiPath using Computer Vision activities.",
+                "Developed python script to process pdf document to extract text information and convert into new pdf while preserving the format."
+            ]
+        },
+        {
             company: "Technovert",
             location: "Hydrabad, India",
             position: "Intern RPA developer",
