@@ -23,6 +23,10 @@ const Skills = () => {
                 Skills
             </div>
             <Reveal className="flex flex-col gap-1">
+            <Reveal>
+                    <span className="text-[18px] font-bold">UiPath: </span>
+                    <span className="text-[16px]">Orchestrator | Document Underdtanding | Web Automation | Action Center | ReFramework | Production Support</span>
+                </Reveal>
                 <Reveal>
                     <span className="text-[18px] font-bold">ReactJS: </span>
                     <span className="text-[16px]">State | Router | Hooks | Context | Redux</span>
@@ -31,12 +35,9 @@ const Skills = () => {
                     <span className="text-[18px] font-bold">Chatbot: </span>
                     <span className="text-[16px]">Rasa | Custom actions | NLP </span>
                 </Reveal>
+               
                 <Reveal>
-                    <span className="text-[18px] font-bold">UiPath: </span>
-                    <span className="text-[16px]">Web Scraping | Selector | Excel | Email | Document Understanding</span>
-                </Reveal>
-                <Reveal>
-                    <span className="text-[20px] font-bold">Python | JavaScript | Java | MongoDB | SQL | Docker | Nginx</span>
+                    <span className="text-[20px] font-bold">Python | JavaScript | Docker | Java | MongoDB | SQL | Docker | Nginx</span>
                 </Reveal>
             </Reveal>
         </Reveal>

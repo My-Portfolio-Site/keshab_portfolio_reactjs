@@ -9,12 +9,24 @@ const Experiance = () => {
         {
             company: "Marlabs Pvt Ltd",
             location: "Banglore, India",
-            position: "Assocoate Software Engineer",
-            date: "Dec 2021 - Present",
+            position: "Software Engineer",
+            date: "Jan 2024 - Present",
             details: [
-                "Designed and implemented intent based chatbot for Marlabs website to improve interaction and inquiry. Developed chatbot with Rasa Framework and front-end with HTML, CSS and JavaScript. Used MongoDB(AWS DocumentDB) for storing responses and deployed on AWS EC2(Ubuntu) server with Docker and Nginx as reverse proxy server.",
-                "Automated POC of Remote PC automation with UiPath using Computer Vision activities.",
-                "Developed python script to process pdf document to extract text information and convert into new pdf while preserving the format."
+                "Developed and implemented UiPath automation solutions to streamline business processes, resulting in 50% to 80% increase in process efficiency.",
+                "Collaborated with business stakeholders to gather requirements, design automation workflows and deliver solutions that met their needs.",
+                "Conducted debugging and testing of UiPath workflows to ensure accuracy and reliability.",
+                "Provided ongoing monitoring, support and maintenance for UiPath robots, addressing user inquiries and troubleshooting issues promptly."    
+            ]
+        },
+        {
+            company: "Marlabs Pvt Ltd",
+            location: "Banglore, India",
+            position: "Assocoate Software Engineer",
+            date: "Dec 2021 - Dec 2023",
+            details: [
+                "Provided monitoring and support(L1 & L2) for UiPath automation projects for client(Health & Life Science company). Responded to user inquiries, providing technical assistance and troubleshooting, resolve issues and test. Generate regular reports and updates on system performances.",
+                "Developed python script to process pdf document to extract text information and convert into new pdf while preserving the format.",
+                "Designed and implemented intent based chatbot for Marlabs website to improve visitors interaction and inquiry experiance. Skills: Rasa Chatbot Framework, HTML, CSS, JavaScript, MongoDB (AWS DocumentDB), AWS EC2, Docker and Nginx."
             ]
         },
         {
