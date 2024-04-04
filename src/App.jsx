@@ -1,3 +1,6 @@
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
 import { useState, useEffect, lazy, Suspense } from 'react';
 
 import Header from './components/Header'
@@ -10,18 +13,6 @@ const AboutMe = lazy(() => import('./components/AboutMe'))
 
 
 function App() {
-  // const [scrollV, setScrollV] = useState(0)
-  //   useEffect(() => {
-  //       const handleScroll = () => {
-  //           const scrollPosition = window.scrollY
-  //           setScrollV(scrollPosition)
-  //       }
-  //       window.addEventListener('scroll', handleScroll)
-  //       return () => {
-  //           window.removeEventListener('scroll', handleScroll)
-  //       }
-  //   },[])
-  // console.log(scrollV);
   return (
     <div className='app' >
       <Header />
@@ -34,6 +25,10 @@ function App() {
       <Suspense fallback={<div></div>}>
         <AboutMe />
       </Suspense>
+
+      {/* Vercel functionalities */}
+      <Analytics />
+      <SpeedInsights />
     </div>
   )
 }

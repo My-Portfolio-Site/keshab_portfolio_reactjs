@@ -50,7 +50,7 @@ const Experiance = () => {
 
     return (
         <FullScreenSection className="gap-3 bg-gradient-to-b from-orange-100 to-green-100" id="experiance">
-            <h2 className="text-[28px] font-extrabold flex flex-row text-purple-500">
+            <h2 className="text-[22px] sm:text-[28px] font-extrabold flex flex-row text-purple-500">
                 <img loading="lazy" className='p-1' src={icon_experiance} height="36px" width="36px" alt='experiance' />
                 Experiance
             </h2>
@@ -62,33 +62,37 @@ const Experiance = () => {
 const ExperianceComponent = ({ company, location, positions }) => {
     return (
         <Reveal className="p-3 bg-slate-100 rounded-lg">
-            <div>
-                <span className="text-[20px] p-2 font-semibold text-blue-800">{company},</span>
-                <span className="text-[16px]  font-bold">{location}</span>
+            <div >
+                <span className="text-[18px] sm:text-[20px] sm:p-2 font-bold text-blue-800">{company},</span>
+                <span className="text-[14px] sm:text-[16px] font-semibold">{location}</span>
             </div>
-            {positions.map(pos, index => {
-                <div key={index}>
-                    <div className="flex flex-col sm:flex-row p-2">
-                        <span className="basis-3/4 text-[14px] md:text-[18px]">{pos.designationtion}</span>
-                        <span className="basis-1/4 text-[14px] md:text-[18px]">{pos.date}</span>
-                    </div>
-                    <div>
-                        <ul className="list-disc ml-10">
-                            {pos.details.map((item, index) =>
-                                <li key={index} className="pt-1 text-[15px]">
-                                    <Reveal>
-                                        {item}
-                                    </Reveal>
-                                </li>
-                            )}
-                        </ul>
-                    </div>
-                </div>
-            })}
-
+            <div className='gap-4 flex flex-col'>
+                {positions.map(position =>
+                    <PositionComponent key={position.designation} {...position} />
+                )}
+            </div>
         </Reveal>
     )
 }
 
+const PositionComponent = ({ designation, date, details }) => {
+    return (
+        <div>
+            <div className="flex flex-col sm:flex-row py-2 sm:px-2 gap-0 sm:gap-10">
+                <span className="font-bold text-[16px] sm:text-[18px]">{designation}</span>
+                <span className="font-semibold text-[14px] sm:text-[16px]">{date}</span>
+            </div>
+            <ul className="list-disc ml-5 sm:ml-10">
+                {details.map((item, index) =>
+                    <li key={index} className="pt-1 text-[12px] sm:text-[16px]">
+                        <Reveal>
+                            {item}
+                        </Reveal>
+                    </li>
+                )}
+            </ul>
+        </div>
+    )
+}
 
 export default Experiance

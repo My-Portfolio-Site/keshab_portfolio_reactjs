@@ -8,7 +8,7 @@ import { Reveal } from "./Reveal";
 const Others = () => {
     return (
         <FullScreenSection className="gap-3 bg-gradient-to-b from-purple-100 to-yellow-100">
-            <div className="flex flex-col md:flex-row gap-2 md:gap-4">
+            <div className="flex flex-col md:flex-row gap-2 sm:gap-4">
                 <Skills />
                 <Certifications_Courses />
             </div>
@@ -18,26 +18,26 @@ const Others = () => {
 const Skills = () => {
     return (
         <Reveal className="card basis-1/2" id="skills">
-            <div className="text-[25px] font-bold flex flex-row text-blue-500">
+            <div className="text-[22px] sm:text-[25px] font-bold flex flex-row text-blue-500">
                 <img loading="lazy" className='p-1' src={icon_skills} height="36px" width="36px" alt='skills' />
                 Skills
             </div>
             <Reveal className="flex flex-col gap-1">
-            <Reveal>
-                    <span className="text-[18px] font-bold">UiPath: </span>
-                    <span className="text-[16px]">Orchestrator | Document Underdtanding | Web Automation | Action Center | ReFramework | Production Support</span>
+                <Reveal>
+                    <span className="text-[14px] sm:text-[18px] font-bold">UiPath: </span>
+                    <span className="text-[12px] sm:text-[16px]">Orchestrator | Document Underdtanding | Web Automation | Action Center | ReFramework | Production Support</span>
                 </Reveal>
                 <Reveal>
-                    <span className="text-[18px] font-bold">ReactJS: </span>
-                    <span className="text-[16px]">State | Router | Hooks | Context | Redux</span>
+                    <span className="text-[14px] sm:text-[18px] font-bold">ReactJS: </span>
+                    <span className="text-[12px] sm:text-[16px]">State | Router | Hooks | Context | Redux</span>
                 </Reveal>
                 <Reveal>
-                    <span className="text-[18px] font-bold">Chatbot: </span>
-                    <span className="text-[16px]">Rasa | Custom actions | NLP </span>
+                    <span className="text-[14px] sm:text-[18px] font-bold">Chatbot: </span>
+                    <span className="text-[12px] sm:text-[16px]">Rasa | Custom actions | NLP </span>
                 </Reveal>
-               
+
                 <Reveal>
-                    <span className="text-[20px] font-bold">Python | JavaScript | Docker | Java | MongoDB | SQL | Docker | Nginx</span>
+                    <span className="text-[14px] sm:text-[18px] font-bold">Python | JavaScript | Docker | Java | MongoDB | SQL | Docker | Nginx</span>
                 </Reveal>
             </Reveal>
         </Reveal>
@@ -47,8 +47,8 @@ const Skills = () => {
 const Certifications_Courses = () => {
     return (
         <Reveal className="card basis-1/2" id="certificate-courses">
-            <div className="text-[25px] font-bold flex flex-row text-yellow-500">
-            <img loading="lazy" className='p-1' src={icon_certificate} height="36px" width="36px" alt='certificates' />
+            <div className="text-[22px] sm:text-[25px] font-bold flex flex-row text-yellow-500">
+                <img loading="lazy" className='p-1' src={icon_certificate} height="36px" width="36px" alt='certificates' />
                 Certifications/Courses
             </div>
             <Reveal>
