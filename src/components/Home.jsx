@@ -10,7 +10,7 @@ import { Reveal } from './Reveal';
 
 const Home = () => {
 
-    const cv_url = "./Keshab%20Manni_CV_Software%20Developer.pdf"
+    const cv_url = "./Keshab Manni_Software Engineer_Resume.pdf"
 
     return (
         <FullScreenSection className='items-center flex-none bg-gradient-to-b from-slate-100 to-orange-100' id="web-RPA-chatbot-developer-portfolio">
