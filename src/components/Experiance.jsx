@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 
 import icon_experiance from '../assets/icons/experiance.svg'
 
@@ -52,7 +53,7 @@ const Experiance = () => {
 
     return (
         <FullScreenSection className="gap-3 bg-gradient-to-b from-orange-100 to-green-100" id="experiance">
-            <h2 className="text-[22px] sm:text-[28px] font-extrabold flex flex-row">
+            <h2 className="text-[22px] sm:text-[28px] font-extrabold  flex flex-row">
                 <img loading="lazy" className='p-1' src={icon_experiance} height="36px" width="36px" alt='experiance' />
                 Experiance
             </h2>
@@ -86,11 +87,11 @@ const PositionComponent = ({ designation, date, details }) => {
             </div>
             <ul className="list-disc ml-5 sm:ml-10">
                 {details.map((item, index) =>
-                    <li key={index} className="pt-1 text-[12px] sm:text-[16px]">
-                        <Reveal>
-                            {item}
-                        </Reveal>
+                <Reveal key={index}>
+                    <li className="pt-1 text-[12px] sm:text-[16px]">
+                        {item}
                     </li>
+                </Reveal>    
                 )}
             </ul>
         </div>

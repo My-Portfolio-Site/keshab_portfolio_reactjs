@@ -19,7 +19,7 @@ const Home = () => {
             <Reveal className='text-[15px] sm:text-[20px]'>UiPath <strong className='text-purple-700'>|</strong> Power Automate <strong className='text-purple-700'>|</strong> ReactJs <strong className='text-purple-700'>|</strong> Chatbot <strong className='text-purple-700'>|</strong> Python</Reveal>
             <Reveal className='flex flex-row gap-3 my-4'>
                 <a aria-label='Keshab Manni GitHub link' href='https://github.com/keshabmanni' target='_blank' rel="noreferrer noopener">
-                    <img loading="lazy" src={icon_github} width='32px' height='32px' className='cursor-pointer' alt='Github' />
+                    <img loading="lazy" src={icon_github} width='32px' height='32px' className='cursor-pointer' alt='Github'/>
                 </a>
                 <a aria-label='Keshab Manni LinkedIn' href='https://www.linkedin.com/in/keshabmanni/' target='_blank' rel="noreferrer noopener">
                     <img loading="lazy" src={icon_linkedIn} width='32px' height='32px' className='cursor-pointer' alt='LinkedIn' />

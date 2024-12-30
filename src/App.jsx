@@ -1,7 +1,4 @@
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/react"
-
-import { useState, useEffect, lazy, Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 
 import Header from './components/Header'
 import Home from './components/Home'
@@ -30,9 +27,6 @@ function App() {
         <AboutMe />
       </Suspense>
 
-      {/* Vercel functionalities */}
-      <Analytics />
-      <SpeedInsights />
     </div>
   )
 }
