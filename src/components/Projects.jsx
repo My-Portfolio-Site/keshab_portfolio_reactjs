@@ -1,14 +1,16 @@
 import icon_projects from '../assets/icons/projects.svg'
+
 import FullScreenSection from "./FullScreenSection"
+import { Reveal } from './Reveal'
 
 const Projects = () => {
     const projectsList = [
         {
-            title: "",
-            description: "",
-            technologies: "",
-            repo: "",
-            link: "",
+            title: "Winning streak for Tour de France prticipants",
+            description: "Given an input dictionary containing a year and a name, please calculate the number of victories of each winner and print all the names of the winners with the number of corresponding victories.",
+            technologies: "UiPath",
+            repo: "https://github.com/RPA-UiPath-Projects/Winning-streak-for-Tour-De-france-prticipants",
+            site: "https://github.com/RPA-UiPath-Projects/Winning-streak-for-Tour-De-france-prticipants",
             image: "",
         }
     ]
@@ -23,11 +25,11 @@ const Projects = () => {
     )
 }
 
-const Project = () => {
+const Project = ({title, description, technologies, repo, site, image}) => {
     return (
-       <div>
-
-       </div>
+       <Reveal>
+        
+       </Reveal>
     )
 }
 export default Projects
