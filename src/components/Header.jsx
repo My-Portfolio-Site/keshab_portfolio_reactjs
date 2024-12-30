@@ -4,10 +4,10 @@ import { motion as m } from 'framer-motion'
 import { SideReveal } from './SideReveal'
 
 const Header = () => {
-    const textReveal = {
-        initial: { width: 0, opacity: 0 },
-        animate: { width: 'auto', opacity: 1, transition: { duration: 0.3 } }
-    }
+    // const textReveal = {
+    //     initial: { width: 0, opacity: 0 },
+    //     animate: { width: 'auto', opacity: 1, transition: { duration: 0.3 } }
+    // }
 
     const logoAnimate = {
         tap: {scale: 0.8},
@@ -17,7 +17,7 @@ const Header = () => {
     return (
         <div className='fixed left-1 top-6 md:top-6 md:left-2 lg:top-8 rounded-full flex flex-row gap-3 px-3 '>
             <div className='flex flex-col gap-3'>
-                <SideReveal>
+                <SideReveal direction='left'>
                     <m.img whileTap='tap' whileHover='hover' variants={logoAnimate} className='h-[35px] w-fit' loading='lazy' src={logo} alt="K" />
                 </SideReveal>
                 {/* <SideReveal>

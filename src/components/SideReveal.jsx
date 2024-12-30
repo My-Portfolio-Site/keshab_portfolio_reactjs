@@ -1,15 +1,15 @@
+/* eslint-disable react/prop-types */
 
 import { motion as m } from 'framer-motion'
 
-
-export const SideReveal = ({children, ...props}) => {
-    const iconsReveal = {
-        start: {opacity:0, x:-100},
-        end: {opacity:1, x:0}
+export const SideReveal = ({children, direction = 'left', ...props}) => {
+    const itemReveal = {
+        start: {opacity: 0, x: direction === 'left' ? -100 : 100},
+        end: {opacity: 1, x: 0}
     }
     return (
         <m.div
-        variants={iconsReveal}
+        variants={itemReveal}
         initial='start'
         animate='end'
         transition={{type: "spring", duration: 0.5}}
