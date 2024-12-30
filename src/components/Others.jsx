@@ -7,7 +7,7 @@ import { Reveal } from "./Reveal";
 
 const Others = () => {
     return (
-        <FullScreenSection className="gap-3 bg-gradient-to-b from-purple-100 to-yellow-100">
+        <FullScreenSection className="gap-3 bg-gradient-to-b from-indigo-100 to-yellow-100">
             <div className="flex flex-col md:flex-row gap-2 sm:gap-4">
                 <Skills />
                 <Certifications_Courses />
