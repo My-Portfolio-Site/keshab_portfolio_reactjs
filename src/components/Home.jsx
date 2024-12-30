@@ -16,7 +16,7 @@ const Home = () => {
         <FullScreenSection className='items-center flex-none bg-gradient-to-b from-slate-100 to-orange-100' id="web-RPA-chatbot-developer-portfolio">
             <Reveal className='text-[38px] font-bold font-Quicksand text-emerald-600'><strong className='text-purple-700'>K</strong>eshab <strong className='text-purple-700'>M</strong>anni</Reveal>
             <Reveal className='text-[20px] font-bold text-sky-700'>Software Engineer</Reveal>
-            <Reveal className='text-[15px] sm:text-[20px]'>UiPath <strong className='text-purple-700'>|</strong> ReactJs <strong className='text-purple-700'>|</strong> Chatbot <strong className='text-purple-700'>|</strong> Python</Reveal>
+            <Reveal className='text-[15px] sm:text-[20px]'>UiPath <strong className='text-purple-700'>|</strong> Power Automate <strong className='text-purple-700'>|</strong> ReactJs <strong className='text-purple-700'>|</strong> Chatbot <strong className='text-purple-700'>|</strong> Python</Reveal>
             <Reveal className='flex flex-row gap-3 my-4'>
                 <a aria-label='Keshab Manni GitHub link' href='https://github.com/keshabmanni' target='_blank' rel="noreferrer noopener">
                     <img loading="lazy" src={icon_github} width='32px' height='32px' className='cursor-pointer' alt='Github' />
