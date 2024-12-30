@@ -10,7 +10,7 @@ import { Reveal } from "./Reveal"
 const AboutMe = () => {
     return (
         <FullScreenSection className="gap-3 bg-gradient-to-b from-yellow-100 to-slate-100" id="About-me">
-            <h2 className="text-[22px] sm:text-[28px] font-extrabold flex flex-row text-purple-500">
+            <h2 className="text-[22px] sm:text-[28px] font-extrabold flex flex-row ">
                 <img loading="lazy" className="p-1 text-purple-500" src={icon_about} height='36px' width='36px' alt="about me" />
                 About me
             </h2>

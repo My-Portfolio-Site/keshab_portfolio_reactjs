@@ -50,7 +50,7 @@ const Experiance = () => {
 
     return (
         <FullScreenSection className="gap-3 bg-gradient-to-b from-orange-100 to-green-100" id="experiance">
-            <h2 className="text-[22px] sm:text-[28px] font-extrabold flex flex-row text-purple-500">
+            <h2 className="text-[22px] sm:text-[28px] font-extrabold flex flex-row">
                 <img loading="lazy" className='p-1' src={icon_experiance} height="36px" width="36px" alt='experiance' />
                 Experiance
             </h2>
