@@ -14,10 +14,12 @@ const Experiance = () => {
                     designation: "Software Engineer",
                     date: "Jan 2024 - Present",
                     details: [
+                        "Developed POCs to migrate UiPath bots to Power Automate by utilizing Power Automate Desktop Flows and Cloud Flows.",
+                        "Utilized Microsoft AI Builder service to automate Invoice data extraction with pre-trained and custom-trained model.",
                         "Developed and implemented UiPath automation solutions to streamline business processes, resulting in 50% to 80% increase in process efficiency.",
                         "Collaborated with business stakeholders to gather requirements, design automation workflows and deliver solutions that met their needs.",
                         "Conducted debugging and testing of UiPath workflows to ensure accuracy and reliability.",
-                        "Provided ongoing monitoring, support and maintenance for UiPath robots, addressing user inquiries and troubleshooting issues promptly."
+                        "Provided ongoing monitoring, support and maintenance for UiPath robots and Power Automate robots, addressing user inquiries and troubleshooting issues promptly."
                     ]
                 },
                 {
