@@ -7,7 +7,7 @@ import img_rasa from '../assets/projectimages/rasa_logo.png'
 
 import FullScreenSection from './FullScreenSection'
 import { Reveal } from './Reveal'
-import Button from './UI/Button'
+import Button from '../components/ui/button'
 
 import { useRef, useState, useEffect } from 'react'
 import { motion as m } from 'framer-motion'
