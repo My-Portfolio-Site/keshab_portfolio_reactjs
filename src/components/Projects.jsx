@@ -8,8 +8,71 @@ import img_rasa from '../assets/projectimages/rasa_logo.png'
 import FullScreenSection from './FullScreenSection'
 import { SideReveal } from './SideReveal'
 
+import { useRef, useState, useEffect } from 'react'
+import { Button } from './ui/Button'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
+
+
 const Projects = () => {
   const projectsList = [
+    {
+      title: 'Winning streak for Tour de France prticipants',
+      description:
+        'Given an input dictionary containing a year and a name, please calculate the number of victories of each winner and print all the names of the winners with the number of corresponding victories.',
+      technologies: ['UiPath'],
+      githubUrl:
+        'https://github.com/RPA-UiPath-Projects/Winning-streak-for-Tour-De-france-prticipants',
+      liveUrl: '',
+      imageUrl: img_uipath,
+    },
+    {
+      title: 'Chatbot for company Website',
+      description:
+        'Chatbot that can interact with the user and provide information about the company and its services. The chatbot is built using Rasa Chatbot Framework and deployed on the company website.',
+      technologies: [
+        'Rasa',
+        'Python',
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'MongoDB',
+        'AWS EC2',
+        'Docker',
+        'Nginx',
+      ],
+      githubUrl: 'https://github.com/My-Rasa-Chatbots/mChat',
+      liveUrl: '',
+      imageUrl: img_rasa,
+    },
+    {
+      title: 'Winning streak for Tour de France prticipants',
+      description:
+        'Given an input dictionary containing a year and a name, please calculate the number of victories of each winner and print all the names of the winners with the number of corresponding victories.',
+      technologies: ['UiPath'],
+      githubUrl:
+        'https://github.com/RPA-UiPath-Projects/Winning-streak-for-Tour-De-france-prticipants',
+      liveUrl: '',
+      imageUrl: img_uipath,
+    },
+    {
+      title: 'Chatbot for company Website',
+      description:
+        'Chatbot that can interact with the user and provide information about the company and its services. The chatbot is built using Rasa Chatbot Framework and deployed on the company website.',
+      technologies: [
+        'Rasa',
+        'Python',
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'MongoDB',
+        'AWS EC2',
+        'Docker',
+        'Nginx',
+      ],
+      githubUrl: 'https://github.com/My-Rasa-Chatbots/mChat',
+      liveUrl: '',
+      imageUrl: img_rasa,
+    },
     {
       title: 'Winning streak for Tour de France prticipants',
       description:
@@ -56,16 +119,81 @@ const Projects = () => {
         />
         Projects
       </h2>
-      <div className='flex overflow-x-auto gap-4 py-4 px-4 scrollbar-hide'>
-        {projectsList.map((item) => (
-          <Project key={item.title} {...item} />
-        ))}
+      <div className='container mx-auto'>
+        <ProjectScroll projectList={projectsList} />
       </div>
     </FullScreenSection>
   )
 }
 
-const Project = ({
+// Scroll for Project cards
+const ProjectScroll = ({ projectList }) => {
+  const scrollRef = useRef(null)
+  const [showLeftArrow, setShowLeftArrow] = useState(false)
+  const [showRightArrow, setShowRightArrow] = useState(true)
+
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      const { current } = scrollRef
+      const scrollAmount = direction === 'left' ? -300 : 300
+      current.scrollBy({ left: scrollAmount, behavior: 'smooth' })
+    }
+  }
+
+  const handleScroll = () => {
+    if (scrollRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current
+      setShowLeftArrow(scrollLeft > 0)
+      setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 1)
+    }
+  }
+
+  useEffect(() => {
+    const { current } = scrollRef
+    if (current) {
+      current.addEventListener('scroll', handleScroll)
+      return () => current.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+  return (
+    <div className='relative'>
+      {showLeftArrow && (
+        <Button
+          variant="outline"
+          size='icon'
+          className='bg-white absolute left-0 top-1/2 -translate-y-1/2 z-10'
+          onClick={() => scroll('left')}
+          aria-label='Scroll left'
+        >
+          <ChevronLeft className='h-4 w-4' />
+        </Button>
+      )}
+      <div
+        ref={scrollRef}
+        className='flex overflow-x-auto gap-4 py-4 px-4 scrollbar-hide'
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+      >
+        {projectList.map((project, index) => (
+          <ProjectCard key={index} {...project} />
+        ))}
+      </div>
+      {showRightArrow && (
+        <Button
+          variant="outline"
+          size='icon'
+          className='bg-white absolute right-0 top-1/2 -translate-y-1/2 z-10'
+          onClick={() => scroll('right')}
+          aria-label='Scroll right'
+        >
+          <ChevronRight className='h-4 w-4' />
+        </Button>
+      )}
+    </div>
+  )
+}
+
+const ProjectCard = ({
   title,
   description,
   technologies,
