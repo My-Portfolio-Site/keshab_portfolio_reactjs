@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 
@@ -45,7 +46,7 @@ export const Reveal = ({children, direction='down', ...props}) => {
         start: {opacity: 0, x: x, y: y},
         end: {opacity: 1, x: 0, y: 0}
     }
-    console.log(itemReveal, children);
+    // console.log(itemReveal, children);
     
     return (
         <m.div ref={ref}
