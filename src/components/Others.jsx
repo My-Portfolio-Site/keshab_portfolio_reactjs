@@ -4,6 +4,44 @@ import icon_certificate from '../assets/icons/certificate.svg'
 import FullScreenSection from './FullScreenSection'
 import { Reveal } from './Reveal'
 
+const certificationsOrCoursesList = [
+  {
+    title: 'Use Power Platform for Custom & Automated Solutions',
+    date: 'September 2024',
+    provider: 'Coursera(Microsoft)',
+  },
+  {
+    title: 'Use AI Builder and Power Automate to Process Invoice Data',
+    date: 'December 2024',
+    provider: 'Coursera',
+  },
+  {
+    title: 'Robotic Process AUtomation (RPA) Specialization',
+    date: 'December 2024',
+    provider: 'Coursera(UiPath)',
+  },
+  {
+    title: 'Rasa Developer Certification',
+    date: 'April 2023',
+    provider: 'Rasa Learning Center',
+  },
+  {
+    title: 'UiPath RPA Developer Course',
+    date: 'March 2022',
+    provider: 'LearnJobs',
+  },
+  {
+    title: 'Java, Python Full Stack',
+    date: 'April 2022',
+    provider: 'Kodnest',
+  },
+  {
+    title: 'React Basics Course',
+    date: 'July 2023',
+    provider: 'Coursera(Meta)',
+  },
+]
+
 const Others = () => {
   return (
     <FullScreenSection className='gap-3 bg-gradient-to-b from-indigo-100 to-yellow-100'>
@@ -37,8 +75,14 @@ const Skills = () => {
           </span>
         </Reveal>
         <Reveal>
+          <span className='text-[14px] sm:text-[18px] font-bold'>Power Automate: </span>
+          <span className='text-[12px] sm:text-[16px]'>
+            Cloud Flows | Desktop Flows | Document Processing (AI Builder) | Web Automation | Power Virtual Agents | Scripting | Microsoft 365 Automation
+          </span>
+        </Reveal>
+        <Reveal>
           <span className='text-[14px] sm:text-[18px] font-bold'>
-            ReactJS:{' '}
+            ReactJS/NextJs:{' '}
           </span>
           <span className='text-[12px] sm:text-[16px]'>
             State | Router | Hooks | Context | Redux
@@ -79,39 +123,16 @@ const Certifications_Courses = () => {
       </div>
       <Reveal>
         <ul className='flex flex-col gap-1 list-disc ml-5'>
-          <Reveal>
-            <li>
-              <p className='text-[16px]'>Rasa Developer Certification</p>
-              <span className='text-gray-600 text-[12px]'>
-                April 2023, Rasa Learning Center
-              </span>
-            </li>
-          </Reveal>
-
-          <Reveal>
-            <li>
-              <p className='text-[16px]'>UiPath RPA Developer Course</p>
-              <span className='text-gray-600 text-[12px]'>
-                March 2022, LearnJobs
-              </span>
-            </li>
-          </Reveal>
-          <Reveal>
-            <li>
-              <p className='text-[16px]'>Java, Python Full Stack</p>
-              <span className='text-gray-600 text-[12px]'>
-                April 2022, Kodnest
-              </span>
-            </li>
-          </Reveal>
-          <Reveal>
-            <li>
-              <p className='text-[16px]'>React Basics Course</p>
-              <span className='text-gray-600 text-[12px]'>
-                July 2023, Coursera(Meta)
-              </span>
-            </li>
-          </Reveal>
+          {certificationsOrCoursesList.map((item) => (
+            <Reveal key={item.title}>
+              <li>
+                <p className='text-[16px]'>{item.title}</p>
+                <span className='text-gray-600 text-[12px]'>
+                  {item.date}, {item.provider}
+                </span>
+              </li>
+            </Reveal>
+          ))}
         </ul>
       </Reveal>
     </Reveal>
