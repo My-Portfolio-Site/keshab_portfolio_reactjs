@@ -1,29 +1,59 @@
-import { useEffect, useRef } from 'react'
-import { motion as m, useAnimation, useInView } from 'framer-motion'
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 
-export const Reveal = ({ children, ...props }) => {
+import { useInView } from 'framer-motion'
+import { useAnimation } from 'framer-motion'
+import { motion as m } from 'framer-motion'
+import { useEffect } from 'react'
+import { useRef } from 'react'
 
-    const ref = useRef(null)
-    const isInView = useInView(ref, { once: true })
-    const controls = useAnimation()
+export const Reveal = ({children, direction='down', ...props}) => {
+    const ref= useRef(null)
+    const isInView = useInView(ref, {once: true})
+
+    const mainContorls = useAnimation()
 
     useEffect(() => {
-        if (isInView) {
-            controls.start("visible")
+        if(isInView) {
+            mainContorls.start('end')
         }
     }, [isInView])
 
+    let x, y;
+    switch (direction) {
+        case 'left':
+            x = -100;
+            y = 0;
+            break;
+        case 'right':
+            x = 100;
+            y = 0;
+            break;
+        case 'top':
+            x = 0;
+            y = -100;
+            break;
+        case 'down':
+            x = 0;
+            y = 100;
+            break;
+        default:
+            x = 0;
+            y = 0;
+    }
+    const itemReveal = {
+        start: {opacity: 0, x: x, y: y},
+        end: {opacity: 1, x: 0, y: 0}
+    }
+    console.log(itemReveal, children);
+    
     return (
-        <m.div
-            ref={ref} variants={{
-                hidden: { opacity: 0, y: 20 },
-                visible: { opacity: 1, y: 0 }
-            }}
-            initial="hidden"
-            animate={controls}
-            transition={{ duration: 0.4, delay: 0.05 }}
-            {...props}
-        >
+        <m.div ref={ref}
+        variants={itemReveal}
+        initial='start'
+        animate={mainContorls}
+        transition={{type: "spring", duration: 0.8}}
+         {...props}>
             {children}
         </m.div>
     )

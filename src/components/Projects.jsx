@@ -6,12 +6,12 @@ import img_uipath from '../assets/projectimages/uipath_logo.png'
 import img_rasa from '../assets/projectimages/rasa_logo.png'
 
 import FullScreenSection from './FullScreenSection'
-import { SideReveal } from './SideReveal'
+import { Reveal } from './Reveal'
+import Button from './ui/Button'
 
 import { useRef, useState, useEffect } from 'react'
-import { Button } from './ui/Button'
+import { motion as m } from 'framer-motion'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
-
 
 const Projects = () => {
   const projectsList = [
@@ -109,7 +109,7 @@ const Projects = () => {
       id='projects'
     >
       <h2 className='text-[22px] sm:text-[28px] font-extrabold flex flex-row'>
-        <img
+        <m.img
           loading='lazy'
           className='p-1'
           src={icon_projects}
@@ -160,7 +160,7 @@ const ProjectScroll = ({ projectList }) => {
     <div className='relative'>
       {showLeftArrow && (
         <Button
-          variant="outline"
+          variant='outline'
           size='icon'
           className='bg-white absolute left-0 top-1/2 -translate-y-1/2 z-10'
           onClick={() => scroll('left')}
@@ -180,7 +180,7 @@ const ProjectScroll = ({ projectList }) => {
       </div>
       {showRightArrow && (
         <Button
-          variant="outline"
+          variant='outline'
           size='icon'
           className='bg-white absolute right-0 top-1/2 -translate-y-1/2 z-10'
           onClick={() => scroll('right')}
@@ -202,8 +202,12 @@ const ProjectCard = ({
   imageUrl,
 }) => {
   return (
-    <SideReveal direction='right'>
-      <div className='w-[300px] flex flex-col bg-slate-100 rounded-lg shadow-md overflow-hidden items-stretch h-full'>
+    <Reveal direction='right'>
+      <m.div
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className='w-[300px] flex flex-col bg-slate-100 rounded-lg shadow-md overflow-hidden items-stretch h-full'
+      >
         <div className='relative h-40'>
           {imageUrl && (
             <img src={imageUrl} className='w-auto' alt={title} loading='lazy' />
@@ -254,8 +258,8 @@ const ProjectCard = ({
             </a>
           )}
         </div>
-      </div>
-    </SideReveal>
+      </m.div>
+    </Reveal>
   )
 }
 export default Projects
