@@ -12,8 +12,19 @@ const Experiance = () => {
             location: "Banglore, India",
             positions: [
                 {
+                    designation: "Senior Software Engineer",
+                    date: "Jan 2025 - Present",
+                    details: [
+                        "Worked on Migration of UiPath bots to Power Automate by utilizing Power Automate Desktop Flows and Cloud Flows.",
+                        "Performed testing of the migrated bots in Dev environment as well as in Staging environment.",
+                        "For bots migration developed user stories, test cases and UAT Manual.",
+                        "Utilized Microsoft AI Builder service to automate Invoice data extraction with pre-trained and fine-tuned models.",
+                        "Provided ongoing monitoring, support and maintenance for UiPath robots and Power Automate robots, addressing user inquiries and troubleshooting issues promptly."
+                    ]
+                },
+                {
                     designation: "Software Engineer",
-                    date: "Jan 2024 - Present",
+                    date: "Jan 2024 - Jan 2025",
                     details: [
                         "Developed POCs to migrate UiPath bots to Power Automate by utilizing Power Automate Desktop Flows and Cloud Flows.",
                         "Utilized Microsoft AI Builder service to automate Invoice data extraction with pre-trained and custom-trained model.",
@@ -25,7 +36,7 @@ const Experiance = () => {
                 },
                 {
                     designation: "Assocoate Software Engineer",
-                    date: "Dec 2021 - Dec 2023",
+                    date: "Dec 2021 - Jan 2024",
                     details: [
                         "Provided monitoring and support(L1 & L2) for UiPath automation projects for client(Health & Life Science company). Responded to user inquiries, providing technical assistance and troubleshooting, resolve issues and test. Generate regular reports and updates on system performances.",
                         "Developed python script to process pdf document to extract text information and convert into new pdf while preserving the format.",

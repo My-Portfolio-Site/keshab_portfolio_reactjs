@@ -32,7 +32,11 @@ const AboutMe = () => {
                     Kathmandu, Nepal
                 </Reveal>
                 <Reveal>
-                    <p className="text-[16px] sm:text-[18px] text-left " style={{ textIndent: '25px' }}>I have experience in developing software solutions with UiPath RPA automation tool, Rasa chatbot framework, Python, web technologies (HTML, CSS, JavaScript) and web frameworks like ReactJs, Django and NodeJs.</p>
+                    <p className="text-[16px] sm:text-[18px] text-left " style={{ textIndent: '25px' }}>
+                        I have experience in developing software solutions with UiPath and Power Automate RPA automation tool, 
+                        Rasa chatbot framework, Python, web technologies (HTML, CSS, JavaScript) and web frameworks 
+                        like ReactJs, Django and NodeJs.
+                        </p>
                 </Reveal>
             </Reveal>
         </FullScreenSection>

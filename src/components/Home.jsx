@@ -9,7 +9,8 @@ import { Reveal } from './Reveal';
 
 const Home = () => {
 
-    const cv_url = "./Software Engineer_Europass CV.pdf.pdf"
+    const cv_url = "./Software Engineer-Keshab Manni.pdf"
+    const europass_cv_url = "./Keshab Manni_EuropassCV_Software Engineer.pdf"
 
     return (
         <FullScreenSection className='items-center flex-none bg-gradient-to-b from-slate-100 to-orange-100' id="web-RPA-chatbot-developer-portfolio">
@@ -23,7 +24,8 @@ const Home = () => {
                 <a aria-label='Keshab Manni LinkedIn' href='https://www.linkedin.com/in/keshabmanni/' target='_blank' rel="noreferrer noopener">
                     <img loading="lazy" src={icon_linkedIn} width='32px' height='32px' className='cursor-pointer' alt='LinkedIn' />
                 </a>
-                <a download="CV_Keshab Manni_Software Developer.pdf" href={cv_url} className='rounded-full bg-violet-600 flex flex-row text-white px-3 py-1'>Resume <img loading="lazy" className='ml-1' src={icon_download} width='20px' height='20px' alt='Download CV' /></a>
+                <a download="CV_Keshab Manni_Software Developer.pdf" href={cv_url} className='rounded-full bg-violet-600 flex flex-row text-white px-3 py-1'>CV <img loading="lazy" className='ml-1' src={icon_download} width='20px' height='20px' alt='Download CV' /></a>
+                <a download="CV_Keshab Manni_Software Developer.pdf" href={europass_cv_url} className='rounded-full bg-violet-600 flex flex-row text-white px-3 py-1'>Europass CV <img loading="lazy" className='ml-1' src={icon_download} width='20px' height='20px' alt='Download CV' /></a>
             </Reveal>
 
             <Reveal direction="down">
