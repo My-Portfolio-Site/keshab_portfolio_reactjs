@@ -4,6 +4,7 @@ import icon_projects from '../assets/icons/projects.svg'
 import icon_github from '../assets/icons/github.svg'
 import img_uipath from '../assets/projectimages/uipath_logo.png'
 import img_rasa from '../assets/projectimages/rasa_logo.png'
+import img_BTechProject from '../assets/projectimages/BTech_Project.png'
 
 import FullScreenSection from './FullScreenSection'
 import { Reveal } from './Reveal'
@@ -44,63 +45,91 @@ const Projects = () => {
       liveUrl: '',
       imageUrl: img_rasa,
     },
+    
     {
-      title: 'Winning streak for Tour de France prticipants',
+      title: 'RobotICT_RPA-Challenge',
       description:
-        'Given an input dictionary containing a year and a name, please calculate the number of victories of each winner and print all the names of the winners with the number of corresponding victories.',
+        'Three different UiPath bots for the RobotICT challenge. 1. Trip Planner, 2. Recipe Ideas, 3. Expenses Counter',
       technologies: ['UiPath'],
       githubUrl:
-        'https://github.com/RPA-UiPath-Projects/Winning-streak-for-Tour-De-france-prticipants',
+        'https://github.com/RPA-UiPath-Projects/RobotICT_RPA-Challenge',
       liveUrl: '',
       imageUrl: img_uipath,
     },
     {
-      title: 'Chatbot for company Website',
+      title: 'Fill-the-RPA-Challenge-website-input-fields',
       description:
-        'Chatbot that can interact with the user and provide information about the company and its services. The chatbot is built using Rasa Chatbot Framework and deployed on the company website.',
-      technologies: [
-        'Rasa',
-        'Python',
-        'HTML',
-        'CSS',
-        'JavaScript',
-        'MongoDB',
-        'AWS EC2',
-        'Docker',
-        'Nginx',
-      ],
-      githubUrl: 'https://github.com/My-Rasa-Chatbots/mChat',
-      liveUrl: '',
-      imageUrl: img_rasa,
-    },
-    {
-      title: 'Winning streak for Tour de France prticipants',
-      description:
-        'Given an input dictionary containing a year and a name, please calculate the number of victories of each winner and print all the names of the winners with the number of corresponding victories.',
+        'The goal of this challenge is to create a workflow that will input data from a spreadsheet into the form fields on the screen. Open the URL: www.rpachallenge.com.Download the excel sheet And follow the instructions: The goal of this challenge is to create a workflow that will input data from a spreadsheet into the form fields on the screen. Beware! The fields will change position on the screen after every submission throughout 10 rounds thus the workflow must correctly identify where each spreadsheet record must be typed every time. The actual countdown of the challenge will begin once you click the Start button until then you may submit the form as many times as you wish without receiving penalties.',
       technologies: ['UiPath'],
       githubUrl:
-        'https://github.com/RPA-UiPath-Projects/Winning-streak-for-Tour-De-france-prticipants',
+        'https://github.com/RPA-UiPath-Projects/Fill-the-RPA-Challenge-website-input-fields',
+      liveUrl: '',
+      imageUrl: img_uipath,
+    },   
+    {
+      title: 'Find-weather-of-given-city',
+      description:
+        'Create a robot which finds the weather of a specific city using Google. Create a robot which finds the weather of a specific city using Google. The city of interest is introduced by user.',
+      technologies: ['UiPath'],
+      githubUrl:
+        'https://github.com/RPA-UiPath-Projects/Find-weather-of-given-city',
       liveUrl: '',
       imageUrl: img_uipath,
     },
     {
-      title: 'Chatbot for company Website',
+      title: 'Read-email-Web-scraping-based-on-subject-Send-mail-of-scrapped-data',
       description:
-        'Chatbot that can interact with the user and provide information about the company and its services. The chatbot is built using Rasa Chatbot Framework and deployed on the company website.',
+        'Create a workkflow which will first read the email, extract the subject line of that email and search for that keyword on ecommerce website and then extract the results and store it in csv. Also send this csv on the same mail id.',
+      technologies: ['UiPath'],
+      githubUrl:
+        'https://github.com/RPA-UiPath-Projects/Read-email-Web-scraping-based-on-subject-Send-mail-of-scrapped-data',
+      liveUrl: '',
+      imageUrl: img_uipath,
+    },
+    {
+      title: 'Read-PDF-Forms-and-extract-data',
+      description:
+        'An Organisation in US have received many registration form in pdf format. Help John to extract information (GivenName,FamilyName,Postcode and City) ONLY from all PDF files and store it in EmployeeDetails.csv',
+      technologies: ['UiPath'],
+      githubUrl:
+        'https://github.com/RPA-UiPath-Projects/Read-PDF-Forms-and-extract-data',
+      liveUrl: '',
+      imageUrl: img_uipath,
+    },
+    {
+      title: 'Send-PDF-attachments-in-mail',
+      description:
+        'Create a workflow that:Reads the 6th page of "Session 11 - exercise 2 - UiPathOrchestratorAzureInstallationGuide2016.1" (in the attachment)Reads the 2nd page of "Session 11 - exercise 2 - ScannedDoc" (in the attachment)Sends an email with both documents attached and with the text from point 1 and text from point 2 as Body Done',
+      technologies: ['UiPath'],
+      githubUrl:
+        'https://github.com/RPA-UiPath-Projects/Send-PDF-attachments-in-mail',
+      liveUrl: '',
+      imageUrl: img_uipath,
+    },
+    {
+      title: 'Shipping-Load-for-each-city',
+      description:
+        'Calculate the combined weight of the packages sent to one city (Data Manipulation)Consider the database of a shipping company containing people and the packages they are sending to certain cities across the world, along with their weight. The database is a Dictionary with the key of String type (the names of the persons) and the values of Dictionary (String/Cities, Double/Weight) type.Please calculate the overall weight for one city destination. Once this is done, the user should be presented with an input dialog containing the distinct list of cities present in the input data dictionary. If the user chooses no value from the input dialog, print "Nothing chosen by the user"; otherwise you can print "The combined weight of the packages sent to <ChosenCity> is x.xx" (use double digits).Note: For input data, download the workflow below, which already has the Dictionary defined.New Dictionary(Of String, Dictionary(Of String, Double)) From {{"John C", New Dictionary(Of String, Double) From {{"Madrid",2.1},{"Paris",1.1}} },{"Sarah C", New Dictionary(Of String, Double) From {{"New York",2.1},{"Paris",3.3},{"Berlin", 0.8}} },{"Kyle R", New Dictionary(Of String, Double) From {{"San Francisco",2.8},{"New York",1.1}} },{"Johnny B", New Dictionary(Of String, Double) From {{"New York",2.1},{"Paris",3.3}, {"Cairo",1.3}, {"Chicago",1.9}} }}',
+      technologies: ['UiPath'],
+      githubUrl:
+        'https://github.com/RPA-UiPath-Projects/Shipping-Load-for-each-city',
+      liveUrl: '',
+      imageUrl: img_uipath,
+    },
+    {
+      title: 'BTech Project: Disease Prediction and Doctor appointment management system',
+      description:
+        'Django based website for Disease Prediction Sytem Using Machine Learning Naive Bayes Classifier And Appointment Booking System. Interface for both Doctors and Patients. Patients can locate doctors based on location and specialization.',
       technologies: [
-        'Rasa',
         'Python',
+        'sqlite',
         'HTML',
         'CSS',
         'JavaScript',
-        'MongoDB',
-        'AWS EC2',
-        'Docker',
-        'Nginx',
       ],
-      githubUrl: 'https://github.com/My-Rasa-Chatbots/mChat',
+      githubUrl: 'https://github.com/B-Tech-Project/eg-doc',
       liveUrl: '',
-      imageUrl: img_rasa,
+      imageUrl: img_BTechProject,
     },
   ]
   return (
