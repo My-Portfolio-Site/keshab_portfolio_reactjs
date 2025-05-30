@@ -14,7 +14,7 @@ const AboutMe = () => {
                 <img loading="lazy" className="p-1 text-purple-500" src={icon_about} height='36px' width='36px' alt="about me" />
                 About me
             </h2>
-            <Reveal className="card bg-white px-5 sm:px-10 sm:w-4/5 mb-20 text-center">
+            <Reveal className="card bg-white px-5 sm:px-10 mb-20 text-center">
                 <Reveal className="flex flex-row gap-2 py-2 text-[16px] sm:text-[20px] text-green-600">
                     <img loading="lazy" width="20px" height="20px" src={icon_phone} className='text-[18px] sm:text-[22px] mt-1' alt="phone"/>
                     +977-9868097562
