@@ -10,7 +10,7 @@ const Education = () => {
                 <img loading="lazy" className='p-1' src={icon_education} height="36px" width="36px" alt='education'/>
                 Education
             </span>
-            <Reveal className="bg-slate-100 px-5 py-5 rounded-lg w-full ">
+            <Reveal className="card px-5 py-5 rounded-lg w-full ">
                 <Reveal className="flex flex-col sm:flex-row gap-2 sm:gap-10">
                     <span className="font-bold text-[14px] sm:text-[18px]">B.Tech, Computer Science and Engineering</span>
                     <span className="font-semibold text-[12px] sm:text-[16px]">Sep 2016 - July 2021</span>

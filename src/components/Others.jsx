@@ -54,7 +54,7 @@ const Others = () => {
 }
 const Skills = () => {
   return (
-    <Reveal className='card basis-1/2' id='skills'>
+    <Reveal className='card px-5 py-3 sm:px-10 basis-1/2' id='skills'>
       <div className='text-[22px] sm:text-[25px] font-bold flex flex-row text-blue-500'>
         <img
           loading='lazy'
@@ -109,7 +109,7 @@ const Skills = () => {
 
 const Certifications_Courses = () => {
   return (
-    <Reveal className='card basis-1/2' id='certificate-courses'>
+    <Reveal className='card px-5 py-3 sm:px-10 basis-1/2' id='certificate-courses'>
       <div className='text-[22px] sm:text-[25px] font-bold flex flex-row text-yellow-500'>
         <img
           loading='lazy'

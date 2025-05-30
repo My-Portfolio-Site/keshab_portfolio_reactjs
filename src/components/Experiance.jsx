@@ -75,7 +75,7 @@ const Experiance = () => {
 
 const ExperianceComponent = ({ company, location, positions }) => {
     return (
-        <Reveal className="p-3 bg-slate-100 rounded-lg">
+        <Reveal className="card p-3 rounded-lg">
             <div >
                 <span className="text-[18px] sm:text-[20px] sm:p-2 font-bold text-blue-800">{company},</span>
                 <span className="text-[14px] sm:text-[16px] font-semibold">{location}</span>

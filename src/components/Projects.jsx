@@ -235,7 +235,7 @@ const ProjectCard = ({
       <m.div
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className='w-[300px] flex flex-col bg-slate-100 rounded-lg shadow-md overflow-hidden items-stretch h-full'
+        className='w-[300px] flex flex-col card rounded-lg shadow-md overflow-hidden items-stretch h-full'
       >
         <div className='relative h-40'>
           {imageUrl && (
