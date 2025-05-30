@@ -14,11 +14,11 @@
 /* custom tailwind class */
 @layer components {
   .fullScreen {
-    @apply scroll-smooth max-w-[1280px] min-h-fit min-w-full px-6 py-8 md:px-16 md:py-6 lg:px-32 lg:py-5  bg-white flex flex-col items-start
+    @apply isolate scroll-smooth max-w-[1280px] min-h-fit min-w-full px-6 py-8 md:px-16 md:py-6 lg:px-32 lg:py-5  bg-white flex flex-col items-start
   }
 
   .card {
-    @apply bg-white/40 shadow-md rounded-lg  backdrop-blur-sm
+    @apply bg-white/60 shadow-md rounded-lg backdrop-blur-sm
   }
 
   .dot-overlay {
