@@ -3,7 +3,7 @@ import { lazy, Suspense } from 'react'
 import { motion as m, useSpring, useScroll } from 'framer-motion'
 
 import Header from './components/Header'
-import Home from './components/Home'
+import Introduction from './components/Introduction'
 
 const Experiance = lazy(() => import('./components/Experiance'))
 const Education = lazy(() => import('./components/Education'))
@@ -35,7 +35,7 @@ function App() {
         }}
       />
       <Header />
-      <Home />
+      <Introduction />
       <Experiance />
       <Education />
       <Suspense fallback={<div></div>}>

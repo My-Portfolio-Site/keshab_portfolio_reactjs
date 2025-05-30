@@ -7,13 +7,13 @@ import FullScreenSection from './FullScreenSection';
 import { Reveal } from './Reveal';
 
 
-const Home = () => {
+const Introduction = () => {
 
     const cv_url = "./Software Engineer-Keshab Manni.pdf"
     const europass_cv_url = "./Keshab Manni_EuropassCV_Software Engineer.pdf"
 
     return (
-        <FullScreenSection className='items-center flex-none bg-gradient-to-b from-slate-100 to-orange-100' id="web-RPA-chatbot-developer-portfolio">
+        <FullScreenSection className='items-center flex-none bg-gradient-to-b from-slate-100 to-orange-100 dot' id="web-RPA-chatbot-developer-portfolio">
             <Reveal direction="right" className='text-[38px] font-bold font-Quicksand text-emerald-600'><strong className='text-purple-700'>K</strong>eshab <strong className='text-purple-700'>M</strong>anni</Reveal>
             <Reveal direction="top" className='text-[20px] font-bold text-sky-700'>Software Engineer</Reveal>
             <Reveal direction="top" className='text-[15px] sm:text-[20px]'>UiPath <strong className='text-purple-700'>|</strong> Power Automate <strong className='text-purple-700'>|</strong> ReactJs <strong className='text-purple-700'>|</strong> Chatbot <strong className='text-purple-700'>|</strong> Python</Reveal>
@@ -39,4 +39,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default Introduction;

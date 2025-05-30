@@ -3,7 +3,7 @@
 
 const FullScreenSection = ({ children, className, ...props }) => {
     return (
-        <section className={`fullScreen z-0 ${className}`} {...props}>
+        <section className={`fullScreen dot-overlay z-0 ${className}`} {...props}>
             {children}
         </section>
     )

@@ -20,6 +20,17 @@
   .card {
     @apply rounded-xl bg-slate-100 px-10 py-5 w-full
   }
+
+  .dot-overlay {
+    @apply relative;
+  }
+   .dot-overlay::before {
+    content: '';
+    @apply absolute inset-0 pointer-events-none;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-size: 15px 15px;
+    z-index: -1;
+  }
 }
 
 
