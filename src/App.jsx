@@ -8,8 +8,11 @@ import Introduction from './components/Introduction'
 const Experiance = lazy(() => import('./components/Experiance'))
 const Education = lazy(() => import('./components/Education'))
 const Projects = lazy(() => import('./components/Projects'))
-const Others = lazy(() => import('./components/Others'))
+const Skills = lazy(()=> import('./components/Skills'))
+const CertificationAndCourses = lazy(() => import('./components/CertificationAndCourses'))
 const AboutMe = lazy(() => import('./components/AboutMe'))
+const Footer = lazy(() => import('./components/Footer'))
+
 
 function App() {
   const { scrollYProgress } = useScroll()
@@ -42,10 +45,16 @@ function App() {
         <Projects />
       </Suspense>
       <Suspense fallback={<div></div>}>
-        <Others />
+        <Skills />
+      </Suspense>
+      <Suspense fallback={<div></div>}>
+        <CertificationAndCourses />
       </Suspense>
       <Suspense fallback={<div></div>}>
         <AboutMe />
+      </Suspense>
+      <Suspense fallback={<div></div>}>
+        <Footer />
       </Suspense>
     </div>
   )

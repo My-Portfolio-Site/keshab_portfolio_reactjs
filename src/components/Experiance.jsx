@@ -63,8 +63,8 @@ const Experiance = () => {
     ]
 
     return (
-        <FullScreenSection className="gap-3 bg-gradient-to-b from-orange-100 to-green-100" id="experiance">
-            <h2 className="text-[22px] sm:text-[28px] font-extrabold  flex flex-row">
+        <FullScreenSection className="gap-5 " id="experiance">
+            <h2 className="section-header">
                 <img loading="lazy" className='p-1' src={icon_experiance} height="36px" width="36px" alt='experiance' />
                 Experiance
             </h2>
@@ -75,9 +75,9 @@ const Experiance = () => {
 
 const ExperianceComponent = ({ company, location, positions }) => {
     return (
-        <Reveal className="card p-3 rounded-lg">
+        <Reveal className="p-3 bg-surface rounded-xl shadow-lg">
             <div >
-                <span className="text-[18px] sm:text-[20px] sm:p-2 font-bold text-blue-800">{company},</span>
+                <span className="text-[18px] sm:text-[20px] sm:p-2 font-bold text-primary">{company},</span>
                 <span className="text-[14px] sm:text-[16px] font-semibold">{location}</span>
             </div>
             <div className='gap-4 flex flex-col'>
@@ -91,22 +91,35 @@ const ExperianceComponent = ({ company, location, positions }) => {
 
 const PositionComponent = ({ designation, date, details }) => {
     return (
-        <div>
-            <div className="flex flex-col sm:flex-row py-2 sm:px-2 gap-0 sm:gap-10">
-                <span className="font-bold text-[16px] sm:text-[18px]">{designation}</span>
-                <span className="font-semibold text-[14px] sm:text-[16px]">{date}</span>
-            </div>
-            <ul className="list-disc ml-5 sm:ml-10">
-                {details.map((item, index) =>
-                <Reveal key={index}>
-                    <li className="pt-1 text-[12px] sm:text-[16px]">
-                        {item}
-                    </li>
-                </Reveal>    
-                )}
-            </ul>
+      // Main container for a single position
+      <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 pt-3 sm:pt-4">
+        {/* Left Column: Designation & Date */}
+        <div className="flex-shrink-0 sm:w-1/4">
+          <div className="flex flex-col">
+            <Reveal>
+              <span className="font-bold text-lg text-primary">{designation}</span>
+            </Reveal>
+            <Reveal>
+              <span className="text-sm text-textMuted mt-1">{date}</span>
+            </Reveal>
+          </div>
         </div>
-    )
-}
+  
+        {/* Right Column: Details List */}
+        <div className="flex-grow">
+          <ul className="list-disc ml-5 space-y-2">
+            {details.map((item, index) => (
+              <Reveal key={index}>
+                <li className="pt-2 text-sm text-textBase leading-relaxed">
+                  {item}
+                </li>
+              </Reveal>
+            ))}
+          </ul>
+        </div>
+      </div>
+    );
+  };
+  
 
 export default Experiance
