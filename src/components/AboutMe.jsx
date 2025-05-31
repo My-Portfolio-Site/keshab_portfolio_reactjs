@@ -9,38 +9,45 @@ import { Reveal } from "./Reveal"
 
 const AboutMe = () => {
     return (
-        <FullScreenSection className="gap-3 bg-gradient-to-b from-yellow-100 to-slate-100" id="About-me">
-            <h2 className="text-[22px] sm:text-[28px] font-extrabold flex flex-row ">
-                <img loading="lazy" className="p-1 text-purple-500" src={icon_about} height='36px' width='36px' alt="about me" />
+        <FullScreenSection className="gap-5" id="About-me">
+            <h2 className="text-[22px] sm:text-[28px] font-Quicksand font-bold flex flex-row items-center">
+                <img loading="lazy" className="p-1 h-8 w-8 mr-2" src={icon_about} alt="about me" /> {/* Adjusted icon styling */}
                 About me
             </h2>
-            <Reveal className="card bg-white px-5 sm:px-10 sm:w-4/5 mb-20 text-center">
-                <Reveal className="flex flex-row gap-2 py-2 text-[16px] sm:text-[20px] text-green-600">
-                    <img loading="lazy" width="20px" height="20px" src={icon_phone} className='text-[18px] sm:text-[22px] mt-1' alt="phone"/>
-                    +977-9868097562
-                </Reveal>
-                <Reveal className="flex flex-row gap-2 py-2 text-[16px] sm:text-[20px] text-blue-600">
-                    <img loading="lazy" width="20px" height="20px" src={icon_mail} className='text-[18px] sm:text-[22px] mt-1' alt="email"/>
-                    keshabmanni22@gmail.com
-                </Reveal>
-                {/* <Reveal className="flex flex-row gap-2 py-2 text-[16px] sm:text-[20px] text-orange-600">
-                    <img loading="lazy" width="20px" height="20px" src={icon_location} className='text-[18px] sm:text-[22px] mt-1' />
-                    Banglore, India
-                </Reveal> */}
-                <Reveal className="flex flex-row gap-2 py-2 text-[16px] sm:text-[20px] text-yellow-600">
-                    <img loading="lazy" width="20px" height="20px" src={icon_location} className='text-[18px] sm:text-[22px] mt-1' alt="location"/>
-                    Kathmandu, Nepal
-                </Reveal>
-                <Reveal>
-                    <p className="text-[16px] sm:text-[18px] text-left " style={{ textIndent: '25px' }}>
-                        I have experience in developing software solutions with UiPath and Power Automate RPA automation tool, 
-                        Rasa chatbot framework, Python, web technologies (HTML, CSS, JavaScript) and web frameworks 
-                        like ReactJs, Django and NodeJs.
-                        </p>
-                </Reveal>
+            {/* Main card with new responsive width and padding */}
+            <Reveal className="card bg-surface rounded-xl shadow-lg p-6 md:p-8 w-full mb-20">
+                <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+                    {/* Left Column: Contact Info */}
+                    <div className="md:w-1/3 flex flex-col gap-4">
+                        <Reveal className="flex items-center gap-3 text-left">
+                            <img loading="lazy" src={icon_phone} className='w-5 h-5 text-primary' alt="phone" />
+                            <span className="text-sm text-textBase hover:text-primary transition-colors">+977-9868097562</span>
+                        </Reveal>
+                        <Reveal className="flex items-center gap-3 text-left">
+                            <img loading="lazy" src={icon_mail} className='w-5 h-5 text-primary' alt="email" />
+                            <span className="text-sm text-textBase hover:text-primary transition-colors">keshabmanni22@gmail.com</span>
+                        </Reveal>
+                        <Reveal className="flex items-center gap-3 text-left">
+                            <img loading="lazy" src={icon_location} className='w-5 h-5 text-primary' alt="location" />
+                            <span className="text-sm text-textBase hover:text-primary transition-colors">Kathmandu, Nepal</span>
+                        </Reveal>
+                    </div>
+
+                    {/* Right Column: Biography */}
+                    <div className="md:w-2/3">
+                        <Reveal>
+                            {/* Removed text-indent style, adjusted text size and alignment */}
+                            <p className="text-base text-textBase leading-relaxed text-left">
+                                I have experience in developing software solutions with UiPath and Power Automate RPA automation tool,
+                                Rasa chatbot framework, Python, web technologies (HTML, CSS, JavaScript) and web frameworks
+                                like ReactJs, Django and NodeJs.
+                            </p>
+                        </Reveal>
+                    </div>
+                </div>
             </Reveal>
         </FullScreenSection>
     )
 }
 
-export default AboutMe
+export default AboutMe;

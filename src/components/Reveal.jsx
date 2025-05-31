@@ -32,11 +32,11 @@ export const Reveal = ({children, direction='down', ...props}) => {
             break;
         case 'top':
             x = 0;
-            y = -100;
+            y = -20;
             break;
         case 'down':
             x = 0;
-            y = 100;
+            y = 20;
             break;
         default:
             x = 0;

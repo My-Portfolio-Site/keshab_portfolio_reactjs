@@ -14,11 +14,26 @@
 /* custom tailwind class */
 @layer components {
   .fullScreen {
-    @apply scroll-smooth max-w-[1280px] min-h-fit min-w-full px-6 py-8 md:px-16 md:py-6 lg:px-32 lg:py-5  bg-white flex flex-col items-start
+    @apply isolate scroll-smooth max-w-[1280px] min-h-fit min-w-full px-6 py-8 md:px-16 md:py-6 lg:px-32 lg:py-5 bg-white flex flex-col items-start
+  }
+
+  .section-header {
+    @apply text-[22px] sm:text-[28px] font-Quicksand font-bold flex flex-row gap-2;
   }
 
   .card {
-    @apply rounded-xl bg-slate-100 px-10 py-5 w-full
+    @apply bg-white/60 shadow-md rounded-lg
+  }
+
+  .dot-overlay {
+    @apply relative;
+  }
+   .dot-overlay::before {
+    content: '';
+    @apply absolute inset-0 pointer-events-none;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-size: 15px 15px;
+    z-index: -1;
   }
 }
 
