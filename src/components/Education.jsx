@@ -2,11 +2,12 @@ import icon_education from '../assets/icons/education.svg'
 
 import PageSection from "./PageSection";
 import { Reveal } from "./Reveal";
+import Card from './Card';
 
 const Education = () => {
     return (
         <PageSection title={"Education"} icon_src={icon_education} id="education">
-            <Reveal className="w-full">
+            <Card className="w-full">
                 <div className='px-5 py-5 bg-surface rounded-lg shadow-lg'>
 
                 <Reveal className="flex flex-col sm:flex-row gap-2 sm:gap-10">
@@ -18,7 +19,7 @@ const Education = () => {
                     <span className="">(Surampalem, Andhra Pradesh, India)</span>
                 </Reveal>
                 </div>
-            </Reveal>
+            </Card>
         </PageSection>
     )
 }

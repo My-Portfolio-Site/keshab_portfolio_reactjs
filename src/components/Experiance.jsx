@@ -4,6 +4,7 @@ import icon_experiance from '../assets/icons/experiance.svg'
 
 import PageSection from "./PageSection";
 import { Reveal } from "./Reveal";
+import Card from './Card';
 
 const Experiance = () => {
     const experiances = [
@@ -71,7 +72,7 @@ const Experiance = () => {
 
 const ExperianceComponent = ({ company, location, positions }) => {
     return (
-        <Reveal className="p-3 bg-surface rounded-xl shadow-lg">
+        <Card>
             <div >
                 <span className="text-[18px] sm:text-[20px] sm:p-2 font-bold text-primary">{company},</span>
                 <span className="text-[14px] sm:text-[16px] font-semibold">{location}</span>
@@ -81,15 +82,13 @@ const ExperianceComponent = ({ company, location, positions }) => {
                     <PositionComponent key={position.designation} {...position} />
                 )}
             </div>
-        </Reveal>
+        </Card>
     )
 }
 
 const PositionComponent = ({ designation, date, details }) => {
     return (
-      // Main container for a single position
       <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 lg:gap-6 pt-3 px-2 sm:pt-4 sm:px-3">
-        {/* Left Column: Designation & Date */}
         <div className="flex-shrink-0 sm:w-1/4">
           <div className="flex flex-col">
             <Reveal>

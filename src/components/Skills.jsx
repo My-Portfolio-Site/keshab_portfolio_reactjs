@@ -2,6 +2,7 @@
 import icon_skills from '../assets/icons/skills.svg'
 import PageSection from './PageSection'
 import { Reveal } from './Reveal'
+import Card from './Card'
 
 const categorizedSkills = {
   'RPA Technologies': [
@@ -60,19 +61,19 @@ const SkillCateroryCard = ({ category, skillsList }) => {
     cardClass = 'row-span-2'
   }
   return (
-    <Reveal className={`card bg-surface px-4 py-3 pt-1 md:p-4 md:pt-2 w-full ${cardClass}`}>
+    <Card className={`card bg-surface px-4 py-3 pt-1 md:p-4 md:pt-2 w-full ${cardClass}`}>
       <h3 className='text-md font-semibold text-textBase mb-3'>{category}</h3>
       <div className='flex flex-wrap gap-2'>
         {skillsList.map((skill) => (
-          <span
+          <Reveal direction='down'
             key={skill}
             className='bg-primary/10 text-primary text-sm px-3 py-1 rounded-full'
           >
             {skill}
-          </span>
+          </Reveal>
         ))}
       </div>
-    </Reveal>
+    </Card>
   )
 }
 

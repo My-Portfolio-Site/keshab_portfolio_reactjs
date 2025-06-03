@@ -8,11 +8,9 @@ import img_BTechProject from '../assets/projectimages/BTech_Project.png'
 
 import PageSection from './PageSection'
 import { Reveal } from './Reveal'
-import Button from '../components/ui/button'
 
-import { useRef, useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion as m } from 'framer-motion'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const Projects = () => {
   const [showAll, setShowAll] = useState(false)
