@@ -1,15 +1,11 @@
 import icon_education from '../assets/icons/education.svg'
 
-import FullScreenSection from "./FullScreenSection";
+import PageSection from "./PageSection";
 import { Reveal } from "./Reveal";
 
 const Education = () => {
     return (
-        <FullScreenSection className="gap-5" id="education">
-            <span className="section-header">
-                <img loading="lazy" className='p-1' src={icon_education} height="36px" width="36px" alt='education'/>
-                Education
-            </span>
+        <PageSection title={"Education"} icon_src={icon_education} id="education">
             <Reveal className="w-full">
                 <div className='px-5 py-5 bg-surface rounded-lg shadow-lg'>
 
@@ -23,7 +19,7 @@ const Education = () => {
                 </Reveal>
                 </div>
             </Reveal>
-        </FullScreenSection>
+        </PageSection>
     )
 }
 

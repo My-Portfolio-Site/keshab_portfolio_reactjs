@@ -2,7 +2,7 @@ import icon_linkedIn from '../assets/icons/linkedin.svg'
 import icon_github from '../assets/icons/github.svg'
 import icon_download from '../assets/icons/download.svg'
 
-import FullScreenSection from './FullScreenSection'
+// import PageSection from './PageSection'
 import { Reveal } from './Reveal'
 
 const Introduction = () => {
@@ -10,9 +10,9 @@ const Introduction = () => {
   const europass_cv_url = './Keshab Manni_EuropassCV_Software Engineer.pdf'
 
   return (
-    <FullScreenSection
-      className='items-center flex-none '
-      id='web-RPA-chatbot-developer-portfolio'
+    <section
+      className='section dot-overlay items-center flex-none gap-0'
+      id='Introduction'
     >
       <div className='flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 w-full px-4 md:px-0'>
         {/* Column 1: Image */}
@@ -30,21 +30,9 @@ const Introduction = () => {
                 maskImage: 'url(mask_brush.png)',
                 WebkitMaskImage: 'url(mask_brush.png)',
                 maskSize: '290px 290px',
-                WebkitMaskSize: '288px 288px',
-                // maskRepeat: 'no-repeat',
-                // WebkitMaskRepeat: 'no-repeat',
-                // maskPosition: 'center',
-                // WebkitMaskPosition: 'center',    
+                WebkitMaskSize: '288px 288px',  
               }}
             />
-            {/* <img
-              loading='lazy'
-              className='absolute h-full inset-0 object-fill mix-blend-saturation'
-              width='288px'
-              height='288px'
-              src='mask_brush.png'
-              alt='keshab manni photo'
-            /> */}
           </div>
         </Reveal>
 
@@ -145,7 +133,7 @@ const Introduction = () => {
           </Reveal>
         </div>
       </div>
-    </FullScreenSection>
+    </section>
   )
 }
 

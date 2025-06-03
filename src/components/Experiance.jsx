@@ -2,7 +2,7 @@
 
 import icon_experiance from '../assets/icons/experiance.svg'
 
-import FullScreenSection from "./FullScreenSection";
+import PageSection from "./PageSection";
 import { Reveal } from "./Reveal";
 
 const Experiance = () => {
@@ -63,13 +63,9 @@ const Experiance = () => {
     ]
 
     return (
-        <FullScreenSection className="gap-5 " id="experiance">
-            <h2 className="section-header">
-                <img loading="lazy" className='p-1' src={icon_experiance} height="36px" width="36px" alt='experiance' />
-                Experiance
-            </h2>
+        <PageSection title="Experiance" icon_src={icon_experiance} id='Experiance'>
             {experiances.map(item => <ExperianceComponent key={item.company} {...item} />)}
-        </FullScreenSection>
+        </PageSection>
     )
 }
 
@@ -80,7 +76,7 @@ const ExperianceComponent = ({ company, location, positions }) => {
                 <span className="text-[18px] sm:text-[20px] sm:p-2 font-bold text-primary">{company},</span>
                 <span className="text-[14px] sm:text-[16px] font-semibold">{location}</span>
             </div>
-            <div className='gap-4 flex flex-col'>
+            <div className='gap-3 flex flex-col'>
                 {positions.map(position =>
                     <PositionComponent key={position.designation} {...position} />
                 )}
@@ -92,7 +88,7 @@ const ExperianceComponent = ({ company, location, positions }) => {
 const PositionComponent = ({ designation, date, details }) => {
     return (
       // Main container for a single position
-      <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 pt-3 sm:pt-4">
+      <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 lg:gap-6 pt-3 px-2 sm:pt-4 sm:px-3">
         {/* Left Column: Designation & Date */}
         <div className="flex-shrink-0 sm:w-1/4">
           <div className="flex flex-col">
@@ -110,7 +106,7 @@ const PositionComponent = ({ designation, date, details }) => {
           <ul className="list-disc ml-5 space-y-2">
             {details.map((item, index) => (
               <Reveal key={index}>
-                <li className="pt-2 text-sm text-textBase leading-relaxed">
+                <li className="text-sm text-textBase leading-relaxed">
                   {item}
                 </li>
               </Reveal>

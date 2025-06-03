@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import icon_skills from '../assets/icons/skills.svg'
-import FullScreenSection from './FullScreenSection'
+import PageSection from './PageSection'
 import { Reveal } from './Reveal'
 
 const categorizedSkills = {
@@ -35,18 +35,7 @@ const categorizedSkills = {
 
 const Skills = () => {
   return (
-    <FullScreenSection className='gap-5 ' id='skills'>
-      <h2 className='section-header'>
-        <img
-          loading='lazy'
-          className='p-1'
-          src={icon_skills}
-          alt='skills'
-          height='36px'
-          width='36px'
-        />
-        Skills
-      </h2>
+    <PageSection  title='Skills' icon_src={icon_skills} id='skills'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6 w-full'>
 
       {Object.entries(categorizedSkills).map(([category, skillsList]) => (
@@ -57,7 +46,7 @@ const Skills = () => {
         />
       ))}
       </div>
-    </FullScreenSection>
+    </PageSection>
   )
 }
 
@@ -71,8 +60,8 @@ const SkillCateroryCard = ({ category, skillsList }) => {
     cardClass = 'row-span-2'
   }
   return (
-    <Reveal className={`card bg-surface p-6 w-full ${cardClass}`}>
-      <h3 className='text-lg font-semibold text-textBase mb-3'>{category}</h3>
+    <Reveal className={`card bg-surface px-4 py-3 pt-1 md:p-4 md:pt-2 w-full ${cardClass}`}>
+      <h3 className='text-md font-semibold text-textBase mb-3'>{category}</h3>
       <div className='flex flex-wrap gap-2'>
         {skillsList.map((skill) => (
           <span

@@ -6,7 +6,7 @@ import img_uipath from '../assets/projectimages/uipath_logo.png'
 import img_rasa from '../assets/projectimages/rasa_logo.png'
 import img_BTechProject from '../assets/projectimages/BTech_Project.png'
 
-import FullScreenSection from './FullScreenSection'
+import PageSection from './PageSection'
 import { Reveal } from './Reveal'
 import Button from '../components/ui/button'
 
@@ -138,21 +138,11 @@ const Projects = () => {
   const projectsToShow = showAll ? projectsList : projectsList.slice(0, 4)
 
   return (
-    <FullScreenSection
-      className='gap-5'
+    <PageSection
+      title={'Projects'}
+      icon_src={icon_projects}
       id='projects'
     >
-      <h2 className='section-header'>
-        <m.img
-          loading='lazy'
-          className='p-1'
-          src={icon_projects}
-          height='36px'
-          width='36px'
-          alt='projects'
-        />
-        Projects
-      </h2>
       <div className='container mx-auto'>
         {/* Replaced ProjectScroll with a direct grid implementation */}
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6 py-3'>
@@ -171,7 +161,7 @@ const Projects = () => {
           </div>
         )}
       </div>
-    </FullScreenSection>
+    </PageSection>
   )
 }
 

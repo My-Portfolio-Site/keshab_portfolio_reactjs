@@ -1,4 +1,4 @@
-import FullScreenSection from "./FullScreenSection"
+import PageSection from "./PageSection"
 
 import icon_about from '../assets/icons/about.svg'
 import icon_phone from '../assets/icons/phone.svg'
@@ -9,12 +9,7 @@ import { Reveal } from "./Reveal"
 
 const AboutMe = () => {
     return (
-        <FullScreenSection className="gap-5" id="About-me">
-            <h2 className="text-[22px] sm:text-[28px] font-Quicksand font-bold flex flex-row items-center">
-                <img loading="lazy" className="p-1 h-8 w-8 mr-2" src={icon_about} alt="about me" /> {/* Adjusted icon styling */}
-                About me
-            </h2>
-            {/* Main card with new responsive width and padding */}
+        <PageSection title="About me" icon_src={icon_about} id='AboutMe'>
             <Reveal className="card bg-surface rounded-xl shadow-lg p-6 md:p-8 w-full mb-20">
                 <div className="flex flex-col md:flex-row gap-6 md:gap-10">
                     {/* Left Column: Contact Info */}
@@ -46,7 +41,7 @@ const AboutMe = () => {
                     </div>
                 </div>
             </Reveal>
-        </FullScreenSection>
+        </PageSection>
     )
 }
 
