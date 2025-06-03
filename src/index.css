@@ -22,7 +22,7 @@
   }
 
   .card {
-    @apply bg-white/60 shadow-md rounded-lg;
+    @apply shadow-md rounded-lg;
   }
 
   .dot-overlay {
