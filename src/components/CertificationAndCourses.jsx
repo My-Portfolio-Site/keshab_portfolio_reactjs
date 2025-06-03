@@ -1,7 +1,8 @@
 import icon_certificate from '../assets/icons/certificate.svg'
 
-import FullScreenSection from './FullScreenSection'
+import PageSection from './PageSection'
 import { Reveal } from './Reveal'
+import Card from './Card'
 
 const certificationsOrCoursesList = [
   {
@@ -43,47 +44,35 @@ const certificationsOrCoursesList = [
 
 const CertificationAndCourses = () => {
   return (
-    <FullScreenSection className='gap-5 ' id='CertificationAndCourses'>
-      <h2 className='section-header'>
-        <img
-          loading='lazy'
-          className='p-1'
-          src={icon_certificate}
-          alt='certificates'
-          height="36px" width="36px"
-        />
-        Certifications & Courses
-      </h2>
+    <PageSection title={'Certifications & Courses'} icon_src={icon_certificate} id='CertificationAndCourses'>
       <Reveal className='w-full' id='certificate-courses'>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 w-full'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 w-full'>
           {certificationsOrCoursesList.map((item) => (
-            <Reveal key={item.title}>
-              <div className='card bg-surface rounded-xl shadow-lg p-4 flex flex-col h-full'>
+            <Card direction='down' key={item.title} className='card bg-surface rounded-xl shadow-lg p-4 pt-2 flex flex-col h-full'>
                 {' '}
                 {/* Added h-full for consistent card height in grid */}
-                <h4 className='text-md font-semibold text-primary mb-1'>
+                <Reveal direction='down' className='text-md font-semibold text-primary mb-1'>
                   {item.title}
-                </h4>
+                </Reveal>
                 <p className='text-sm text-textMuted mb-1'>{item.provider}</p>
-                <p className='text-xs text-textMuted mb-2'>{item.date}</p>
+                <p className='text-xs text-textMuted'>{item.date}</p>
                 {/* Placeholder for link if data structure includes it in the future
-          {item.link && (
-            <a
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-auto inline-block text-sm text-secondary hover:underline"
-            >
-              View Credential
-            </a>
-          )}
-          */}
-              </div>
-            </Reveal>
+                {item.link && (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-block text-sm text-secondary hover:underline"
+                  >
+                    View Credential
+                  </a>
+                )}
+                */}
+            </Card>
           ))}
         </div>
       </Reveal>
-    </FullScreenSection>
+    </PageSection>
   )
 }
 

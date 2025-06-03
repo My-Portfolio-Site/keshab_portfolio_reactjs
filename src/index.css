@@ -4,17 +4,17 @@
 
 /* loading custom font */
 @font-face {
-  font-family: "QuicksandBold";
-  src: local("QuicksandBold"),
-   url("./fonts/Quicksand/Quicksand-Bold.ttf") format("truetype");
+  font-family: 'QuicksandBold';
+  src: local('QuicksandBold'),
+    url('./fonts/Quicksand/Quicksand-Bold.ttf') format('truetype');
   font-weight: bold;
   font-display: swap;
 }
 
 /* custom tailwind class */
 @layer components {
-  .fullScreen {
-    @apply isolate scroll-smooth max-w-[1280px] min-h-fit min-w-full px-6 py-8 md:px-16 md:py-6 lg:px-32 lg:py-5 bg-white flex flex-col items-start
+  .section {
+    @apply isolate scroll-smooth max-w-[1280px] min-h-fit min-w-full px-6 py-8 md:px-16 md:py-6 lg:px-32 lg:py-5 flex flex-col items-start gap-5 bg-gradient-to-b even:from-background1 even:to-background2 odd:from-background2 odd:to-background1 z-0;
   }
 
   .section-header {
@@ -22,26 +22,28 @@
   }
 
   .card {
-    @apply bg-white/60 shadow-md rounded-lg
+    @apply bg-white/60 shadow-md rounded-lg;
   }
 
   .dot-overlay {
     @apply relative;
   }
-   .dot-overlay::before {
+  .dot-overlay::before {
     content: '';
     @apply absolute inset-0 pointer-events-none;
-    background-image: radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.1) 1px,
+      transparent 1px
+    );
     background-size: 15px 15px;
     z-index: -1;
   }
 }
 
-
 /* others css */
 
 :root {
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -49,9 +51,9 @@
   -webkit-text-size-adjust: 100%;
   scrollbar-width: none;
 
-  --slateBlue: #8186F9;
-  --greyBlack: #6A6B6D;
-  --black: #2A2C2E;
+  --slateBlue: #8186f9;
+  --greyBlack: #6a6b6d;
+  --black: #2a2c2e;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 :root::-webkit-scrollbar {
@@ -60,8 +62,6 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 :root {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-
-
