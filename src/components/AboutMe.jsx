@@ -6,11 +6,12 @@ import icon_mail from '../assets/icons/mail.svg'
 import icon_location from '../assets/icons/location.svg'
 
 import { Reveal } from "./Reveal"
+import Card from './Card'
 
 const AboutMe = () => {
     return (
         <PageSection title="About me" icon_src={icon_about} id='AboutMe'>
-            <Reveal className="card bg-surface rounded-xl shadow-lg p-6 md:p-8 w-full mb-20">
+            <Card className="card bg-surface rounded-xl shadow-lg p-6 md:p-8 w-full mb-10">
                 <div className="flex flex-col md:flex-row gap-6 md:gap-10">
                     {/* Left Column: Contact Info */}
                     <div className="md:w-1/3 flex flex-col gap-4">
@@ -40,7 +41,7 @@ const AboutMe = () => {
                         </Reveal>
                     </div>
                 </div>
-            </Reveal>
+            </Card>
         </PageSection>
     )
 }

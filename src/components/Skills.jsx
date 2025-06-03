@@ -61,7 +61,7 @@ const SkillCateroryCard = ({ category, skillsList }) => {
     cardClass = 'row-span-2'
   }
   return (
-    <Card className={`card bg-surface px-4 py-3 pt-1 md:p-4 md:pt-2 w-full ${cardClass}`}>
+    <Card className={`card px-4 py-3 pt-1 md:p-4 md:pt-2 w-full bg-surface ${cardClass}`}>
       <h3 className='text-md font-semibold text-textBase mb-3'>{category}</h3>
       <div className='flex flex-wrap gap-2'>
         {skillsList.map((skill) => (
