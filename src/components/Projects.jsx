@@ -175,8 +175,8 @@ const ProjectCard = ({
   return (
     <Reveal direction='down'>
       <m.div
-        whileHover={{ scale: 1.03 }}
-        whileTap={{ scale: 0.95 }}
+        whileHover={{ scale: 1.01 }}
+        whileTap={{ scale: 0.98 }}
         transition={{ type: "spring", stiffness: 400, damping: 17 }}
         // className='w-[300px] flex flex-col card rounded-lg shadow-md overflow-hidden items-stretch h-full'
         className='w-full flex flex-col bg-surface rounded-xl shadow-lg overflow-hidden items-stretch h-full'
