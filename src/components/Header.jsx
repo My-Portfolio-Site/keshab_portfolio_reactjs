@@ -1,4 +1,4 @@
-import logo from '../assets/LogoSVG/logo20.svg'
+import logo from '../assets/logos/my/logo20.svg'
 import { Reveal } from './Reveal'
 
 const Header = () => {
