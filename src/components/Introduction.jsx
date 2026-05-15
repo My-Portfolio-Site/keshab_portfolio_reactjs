@@ -51,7 +51,7 @@ const Introduction = () => {
           >
             {' '}
             {/* Added mt-1 for a bit of space */}
-            Senior Software Engineer
+            Technical Lead
           </Reveal>
           <Reveal
             direction='top'
