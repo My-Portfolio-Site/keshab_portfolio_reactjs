@@ -13,8 +13,19 @@ const Experiance = () => {
             location: "Banglore, India",
             positions: [
                 {
+                    designation: "Technical Lead",
+                    date: "Apr 2026 - Present",
+                    details: [
+                        "Designed and Developed Power Canvas App to manage power automate flow configurations, flow runs and run history. Deployed to the end-user machine to trigger on demand flow runs.",
+                        "Managed Migration and setup of Developer environment from Developer Type to Sanbox.",
+                        "Developed cloud and desktop flows for HR and Admin.",
+                        "Enhanced AI Builder model with retraining for automating Invoice data extraction.",
+                        "Provided ongoing monitoring, support and maintenance for Power Automate flows and apps, addressing user inquiries and troubleshooting issues promptly."
+                    ]
+                },
+                {
                     designation: "Senior Software Engineer",
-                    date: "Jan 2025 - Present",
+                    date: "Jan 2025 - Apr 2026",
                     details: [
                         "Worked on Migration of UiPath bots to Power Automate by utilizing Power Automate Desktop Flows and Cloud Flows.",
                         "Performed testing of the migrated bots in Dev environment as well as in Staging environment.",
