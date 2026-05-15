@@ -20,12 +20,16 @@ const AboutMe = () => {
                             <span className="text-sm text-textBase hover:text-primary transition-colors">+977-9868097562</span>
                         </Reveal>
                         <Reveal className="flex items-center gap-3 text-left">
+                            <img loading="lazy" src={icon_phone} className='w-5 h-5 text-primary' alt="phone" />
+                            <span className="text-sm text-textBase hover:text-primary transition-colors">+91-9542186990</span>
+                        </Reveal>
+                        <Reveal className="flex items-center gap-3 text-left">
                             <img loading="lazy" src={icon_mail} className='w-5 h-5 text-primary' alt="email" />
                             <span className="text-sm text-textBase hover:text-primary transition-colors">keshabmanni22@gmail.com</span>
                         </Reveal>
                         <Reveal className="flex items-center gap-3 text-left">
                             <img loading="lazy" src={icon_location} className='w-5 h-5 text-primary' alt="location" />
-                            <span className="text-sm text-textBase hover:text-primary transition-colors">Kathmandu, Nepal</span>
+                            <span className="text-sm text-textBase hover:text-primary transition-colors">Kathmandu, Nepal / Banglore, India</span>
                         </Reveal>
                     </div>
 
